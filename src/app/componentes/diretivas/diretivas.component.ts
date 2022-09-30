@@ -9,6 +9,9 @@ export class DiretivasComponent implements OnInit {
   tamanho = '40px';
   fonte = 'arial';
   cor = 'red';
+  classes_css = ['titulo-verde','titulo-pequeno'];
+  sublinhado_css = 'titulo-sublinhado';
+
   constructor() { }
 
   ngOnInit(): void {
