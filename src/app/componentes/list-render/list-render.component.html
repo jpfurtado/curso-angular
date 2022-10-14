@@ -1,0 +1,12 @@
+<div class="aula">
+    <p>list-render works!</p>
+    <h2>Animais:</h2>
+    <ul>
+        <li *ngFor="let animal of animais">
+            Nome: {{animal.nome}} - Tipo: {{animal.tipo}}
+            <button (click)="mostraIdade(animal)">Idade</button>
+        </li>
+        <h3>{{idadeAnimal}}</h3>
+    </ul>
+
+</div>
