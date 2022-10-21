@@ -1,0 +1,11 @@
+<div class="aula">
+    <p>two-way-biding works!</p>
+    <form>
+        <input type="text" [(ngModel)]='nome' name="nome" 
+            placeholder="Digite o seu nome">
+        <input type="submit" value="Enviar">
+    </form>
+    <div *ngIf="nome!='' ">
+        <p>O nome é {{ nome }}</p>
+    </div>
+</div>

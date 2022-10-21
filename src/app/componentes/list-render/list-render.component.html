@@ -5,6 +5,7 @@
         <li *ngFor="let animal of animais">
             Nome: {{animal.nome}} - Tipo: {{animal.tipo}}
             <button (click)="mostraIdade(animal)">Idade</button>
+            <button (click)="removeAnimal(animal)">Excluir</button>
         </li>
         <h3>{{idadeAnimal}}</h3>
     </ul>
