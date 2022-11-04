@@ -1,5 +1,6 @@
 import { EventEmitter, NgModule, Pipe } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DetalhesItemComponent } from './componentes/detalhes-item/detalhes-item.component';
 import { DiretivasComponent } from './componentes/diretivas/diretivas.component';
 import { EmitterComponent } from './componentes/emitter/emitter.component';
 import { EventosComponent } from './componentes/eventos/eventos.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'eventos', component: EventosComponent},
   {path: 'emitter', component: EmitterComponent},
   {path: 'list', component: ListRenderComponent},
+  {path: 'list/:id', component: DetalhesItemComponent},
   {path: 'pipes', component: PipesComponent},
   {path: 'two-way-biding', component: TwoWayBidingComponent}
 
