@@ -29,8 +29,10 @@ export class ListRenderComponent implements OnInit {
     this.idadeAnimal = `${animal.nome}(${animal.tipo}) tem ${animal.idade} anos!`;
   }
   removeAnimal(animal: Animal) {
-    console.log('Removendo animal...')
-    this.animais = this.listService.remove(this.animais, animal)
+    // Remove o Animal do front-end
+    this.animais = this.animais.filter((a) => animal.nome !== a.nome);
+    // Remove efetivamente do banco
+    this.listService.remove(animal.id).subscribe();
   }
   getAnimais() {
     this.listService.getAll().subscribe((animais) => (this.animais = animais));
