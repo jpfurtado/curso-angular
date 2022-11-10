@@ -30,7 +30,7 @@ export class ListRenderComponent implements OnInit {
   }
   removeAnimal(animal: Animal) {
     // Remove o Animal do front-end
-    this.animais = this.animais.filter((a) => animal.nome !== a.nome);
+    this.animais = this.animais.filter((a) => animal.id !== a.id);
     // Remove efetivamente do banco
     this.listService.remove(animal.id).subscribe();
   }
