@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,7 @@ import { ListRenderComponent } from './componentes/list-render/list-render.compo
 import { PipesComponent } from './componentes/pipes/pipes.component';
 import { TwoWayBidingComponent } from './componentes/two-way-biding/two-way-biding.component';
 import { DetalhesItemComponent } from './componentes/detalhes-item/detalhes-item.component';
+import { DataFormComponent } from './componentes/data-form/data-form.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +31,14 @@ import { DetalhesItemComponent } from './componentes/detalhes-item/detalhes-item
     ListRenderComponent,
     PipesComponent,
     TwoWayBidingComponent,
-    DetalhesItemComponent
+    DetalhesItemComponent,
+    DataFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
